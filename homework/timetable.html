@@ -4,7 +4,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style> table, thead, tbody, tfoot, tr, th, td{border: 1px solid black;  border-collapse:collapse;}
+  <style> 
+    .subject1{backgeound-color:lightgreen;}
+    .subject2{background-color:yellow;}
+    .subject3{background-color:pink;}
+    .subject4{background-color:lightblue;}
+    .subject5{background-color:orange;}
+    .subject6{background-color:gray;}
+    table, thead, tbody, tfoot, tr, th, td{border: 1px solid black;  border-collapse:collapse;}
   </style> <!--  border-collapse:collapse 단선으로, 반대는 separate -->
   <title>시간표</title>
 </head>
@@ -20,28 +27,28 @@
   <tbody>
   <tr>
   <td>1</td>
-<td rowspan="2"> </td><td rowspan="2"> </td><td rowspan="2" bgcolor="lightgreen">자료구조 및 실습</td>
+<td rowspan="2"> </td><td rowspan="2"> </td><td rowspan="2" class="subject1">자료구조 및 실습</td>
   <td rowspan="2"> </td><td rowspan="9">        </td>
   </tr>
   <tr>
   <td>2</td>
   </tr>
   <tr>
-  <td>3</td><td rowspan="2" bgcolor="yellow">디지털 논리회로</td><td rowspan="2" bgcolor="lightgreen">자료구조 및 실습</td><td> </td><td rowspan="2" bgcolor="pink">인터넷 프로그래밍</td>
+  <td>3</td><td rowspan="2" class="subject2">디지털 논리회로</td><td rowspan="2" class="subject1">자료구조 및 실습</td><td> </td><td rowspan="2" bgcolor="pink">인터넷 프로그래밍</td>
   </tr>
   <tr>
-  <td>4</td><td rowspan="2" bgcolor="pink">인터넷 프로그래밍</td>
+  <td>4</td><td rowspan="2" class="subject3">인터넷 프로그래밍</td>
   </tr>
   <tr>
   <td>5</td>
-  <td rowspan="2"> </td><td bgcolor="yellow">디지털 논리회로</td><td rowspan="5">
+  <td rowspan="2"> </td><td class="subject2">디지털 논리회로</td><td rowspan="5">
         </td>
   </tr>
   <tr>
-  <td>6</td><td> </td><td rowspan="4" bgcolor="lightblue">C++ 프로그래밍</td>
+  <td>6</td><td> </td><td rowspan="4" class="subject4">C++ 프로그래밍</td>
   </tr>
   <tr>
-  <td>7</td><td rowspan="3" bgcolor="orange">유전과 사회</td><td rowspan="3"  bgcolor="gray">유클리드 기하학</td>
+  <td>7</td><td rowspan="3" class="subject5">유전과 사회</td><td rowspan="3"  class="subject6">유클리드 기하학</td>
   </tr>
   <tr>
   <td>8</td>
