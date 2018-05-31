@@ -23,8 +23,18 @@ function printValue(){
 for(var i in arguments)
 document.write(arguments[i],"<br/>");
 }
-var value=sumy(10,20,30);
+var num1 = window.prompt("숫자 입력 : ");
+num1 = parseFloat(num1);
+var num2 = window.prompt("숫자 입력 : ");
+num2 = parseFloat(num2);
+var num3 = window.prompt("숫자 입력 : ");
+num3 = parseFloat(num3);
+var num5 = window.prompt("숫자 입력 : ");
+num5 = parseFloat(num5);
+var num6 = window.prompt("숫자 입력 : ");
+num6 = parseFloat(num6);
+var value=sumy(num1, num2, num3);
 printValue(value);
-printValue("a",10,15,"v");
+printValue("a", num5, num6, "v");
 </script></section>
 <footer><p>&copy; 20XX Made by Korea. All rights reserved.</p></footer></body></html>
