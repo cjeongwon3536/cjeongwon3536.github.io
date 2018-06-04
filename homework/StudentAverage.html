@@ -1,0 +1,38 @@
+<!doctype html>  <!-- StudentAverage.html -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="sample.css"/><script src="../js/sample.js"></script>
+  <title>웹 프로그래밍 실습</title>
+</head>
+<body>
+  <header><h2>실습 대환영</h2></header>
+  <nav><ul><li><a href="http://hive.dju.ac.kr">실습서버</a></li></ul></nav>
+  <section><h4>가변 인자 함수 실습</h4>
+<script> 
+function average(score){
+var result=0;
+for(var i=0; i<score.length-1; i++){
+result=result+score[i];
+}
+return result/(score.length-1);
+}
+
+var score = new Array();
+var i = 0;
+while(score[i]!="n"&&score[i]!="N"){
+score[i] = window.prompt("성적 입력(n이 입력되면 입력 종료) : ");
+if(score[i]!="n"&&score[i]!="N"){
+score[i] = parseInt(score[i]);
+i++;
+}
+}
+
+var value=average(score);
+document.write("평균 = "+value);
+
+</script>  
+</section>
+<footer><p>&copy; 20XX Made by Korea. All rights reserved.</p></footer></body></html>
