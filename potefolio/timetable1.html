@@ -1,50 +1,67 @@
-<!doctype html>  <!-- index.html -->
+<!doctype html>  <!-- timetable.html -->
 <html lang="ko">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="stylesheet"href="../css/potefolio.css"/>
- <script>
+  <script>
    function event1onclick(){   document.getElementById("id_1").innerHTML
-   ="<p><b>디지털 논리회로</b><br/>김용수 교수님<br/>정보 처리 기사 자격증을 따는데 도움이 되고 수업 내용이 꽤나 복잡하지만 이해하면 충분히 해나아갈 수 있는 것 같습니다<br/></p>";}
+   ="<p><b>디지털 논리회로</b><br/><br/>김용수 교수님<br/><br/>정보 처리 기사 자격증을 따는데 도움이 되고 수업 내용이 꽤나 복잡하지만 이해하면 충분히 해나아갈 수 있는 것 같습니다<br/><br/></p>";}
    function event2onclick(){   document.getElementById("id_1").innerHTML
-   ="<p><b>자료구조 및 실습</b><br/강석훈 교수님<br/>컴퓨터에서 처리할 자료를 효율적으로 관리하고 구조화시킨 과목이며, 처음에는 무슨 소리인가 했지만 수업을 듣다 보니 차차 이해가 되던 과목입니다<br/>";}
+   ="<p><b>자료구조 및 실습</b><br/><br/강석훈 교수님<br/><br/>컴퓨터에서 처리할 자료를 효율적으로 관리하고 구조화시킨 과목이며, 처음에는 무슨 소리인가 했지만 수업을 듣다 보니 차차 이해가 되던 과목입니다<br/><br/>";}
    function event3onclick(){   document.getElementById("id_1").innerHTML
-   ="<p><b>인터넷프로그래밍</b><br/>우훈식 교수님<br/>다른 과목들과 달리 처음부터 흥미가 느껴졌던 과목이고 배우면서 더욱 흥미가 생겼습니다<br/>";}
+   ="<p><b>인터넷프로그래밍</b><br/><br/>우훈식 교수님<br/><br/>다른 과목들과 달리 처음부터 흥미가 느껴졌던 과목이고 배우면서 더욱 흥미가 생겼습니다<br/><br/>";}
    function event4onclick(){   document.getElementById("id_1").innerHTML
-   ="<p><b>C++ 프로그래밍</b><br/>이새봄 교수님<br/>다른 과목들은 새로 배우는 내용들이라 상관이 없었는데 이 과목은 C언어와 이어지므로 더욱 신경 쓰고 더 공부하려고 노력한 것 같습니다<br/>";}
+   ="<p><b>C++ 프로그래밍</b><br/><br/>이새봄 교수님<br/><br/>다른 과목들은 새로 배우는 내용들이라 상관이 없었는데 이 과목은 C언어와 이어지므로 더욱 신경 쓰고 더 공부하려고 노력한 것 같습니다<br/><br/>";}
   function event5onclick(){   document.getElementById("id_1").innerHTML
-   ="<p><b>유전과 사회</b><br/>안광숙 교수님<br/>고등학교 때 배운 유전이 세분화되었고 이전에 몰랐던 새로운 지식들을 얻게 되었습니다. 조별 발표 과제로 참여하지 않은 학생은 과감히 이름을 빼버려야한다는 교훈을 얻었습니다<br/>";}
+   ="<p><b>유전과 사회</b><br/><br/>안광숙 교수님<br/><br/>고등학교 때 배운 유전이 세분화되었고 이전에 몰랐던 새로운 지식들을 얻게 되었습니다. 조별 발표 과제로 참여하지 않은 학생은 과감히 이름을 빼버려야한다는 교훈을 얻었습니다<br/><br/>";}
   function event6onclick(){   document.getElementById("id_1").innerHTML
-   ="<p><b>유클리드 기하학</b><br/>김소연 교수님<br/>뻔한 내용을 증명하는 수업이라 처음에는 의아했지만 시간이 가면 갈 수 록 유클리드라는 사람은 정말 대단하다고 생각했습니다 이해하기도 정말 힘들지만 조별 토론을 하며 친화성을 더 높여주는 과목입니다<br/>";}
+   ="<p><b>유클리드 기하학</b><br/><br/>김소연 교수님<br/><br/>뻔한 내용을 증명하는 수업이라 처음에는 의아했지만 시간이 가면 갈 수 록 유클리드라는 사람은 정말 대단하다고 생각했습니다 이해하기도 정말 힘들지만 조별 토론을 하며 친화성을 더 높여주는 과목입니다<br/><br/>";}
   function event7onclick(){   document.getElementById("id_1").innerHTML
-   ="<p><b>캠퍼스 멘토링</b><br/>강석훈 교수님<br/><br/>";}
+   ="<p><b>캠퍼스 멘토링</b><br/><br/>강석훈 교수님<br/><br/>";}
  </script>
+<style>
+body{background: lightgray;}
+div{background: #EAEAEA;}
+footer{background: #EAEAEA;}
+a:link{text-decoration:none;}
+a:visited{color:black; text-decoration:none;}
+a:hover{color:blue;}
+a:active{color:red;}
+ul{background:white;}
+th{bgcolor:lightgray;}
+</style>
   <title>포트폴리오</title>
+
 </head>
 <body>
-  <header class="header"><h2>포트폴리오</h2></header>
-  <div class="row"></div>
-  <div id="main">
-   <nav class="col-3 menu"> <!-- 메뉴 -->
-    <ul><li><a href="https://cjeongwon3536.github.io/potefolio/index.html">Home</a></li><li><a href="https://cjeongwon3536.github.io/potefolio/timetable.html">수강 과목</a></li><li><a href="https://cjeongwon3536.github.io/potefolio/study.html">수업 내용</a></li><li><a href="https://cjeongwon3536.github.io/potefolio/plan.html">계획</a></li></ul></nav>
-
-    <section class="col-6">
-<table>
+<img src="https://cjeongwon3536.github.io/pote/banner.jpg"/>
+<div align="center"><a href="https://cjeongwon3536.github.io/pote/index.html"> 메인 </a>|<a href="https://cjeongwon3536.github.io/pote/timetable.html"> 수강과목 </a>|
+<a href="https://cjeongwon3536.github.io/pote/study.html"> 수업내용 </a>|
+<a href="https://cjeongwon3536.github.io/pote/plan.html"> 계획 </a>
+</div>
+<br/>
+<div>
+  <h1 align="center">
+  수강 과목
+  </h1>
+</div>
+<section>
+<br/>
+<table align="center">
 <caption><h3>2학년 1학기 시간표</h3></caption>
 <thead>
 <tr >
-<th bgcolor="lightgray" align="center">　　</th>
-<th bgcolor="lightgray"><font color="white">MON</font></th>
-<th bgcolor="lightgray"><font color="white">TUE</font></th>
-<th bgcolor="lightgray"><font color="white">WED</font></th>
-<th bgcolor="lightgray"><font color="white">THU</font></th>
-<th bgcolor="lightgray"><font color="white">FRI</font></th>
+<th align="center">　　</th>
+<th><font color="white">MON</font></th>
+<th><font color="white">TUE</font></th>
+<th><font color="white">WED</font></th>
+<th><font color="white">THU</font></th>
+<th><font color="white">FRI</font></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td bgcolor="lightgray" align="center">
+<td align="center">
 <b><font color="white">1</font></b></td>
 <td rowspan="2"></td>
 <td rowspan="2"></td>
@@ -54,57 +71,61 @@
 <td rowspan="9"></td>
 </tr>
 <tr>
-<td bgcolor="lightgray" align="center">
+<td align="center">
 <b><font color="white">2</font></b></td>
 </tr>
 <tr>
-<td bgcolor="lightgray" align="center"><b><font color="white">3</font></b></td>
+<td align="center"><b><font color="white">3</font></b></td>
 <td rowspan="2" , bgcolor="#E8FFFF" align="center" onclick="event1onclick()">디지털 논리회로</td>
 <td rowspan="2" bgcolor="#FFE8FF" align="center" onclick="event2onclick()">자료구조 및 실습</td>
 <td></td>
 <td rowspan="2" bgcolor="lightgreen"  align="center" onclick="event3onclick()">인터넷 프로그래밍</td>
 </tr>
 <tr>
-<td bgcolor="lightgray" align="center"><b><font color="white">4</font></b></td>
+<td align="center"><b><font color="white">4</font></b></td>
 <td rowspan="2" bgcolor="lightgreen" align="center" onclick="event3onclick()">인터넷 프로그래밍</td>
 <td rowspan="2"></td>
 </tr>
 <tr>
-<td bgcolor="lightgray" align="center">
+<td align="center">
 <b><font color="white">5</font></b></td>
 <td rowspan="2"></td><td bgcolor="#E8FFFF"><p align="center" onclick="event1onclick()">디지털 논리회로</td>
 <td rowspan="2"></td>
 </tr>
 <tr>
-<td bgcolor="lightgray" align="center"><b><font color="white">6</font></b></td>
+<td align="center"><b><font color="white">6</font></b></td>
 <td></td>
 <td rowspan="4" bgcolor="#EECCD4" align="center" onclick="event4onclick()">C++프로그래밍</td>
 </tr>
 <tr>
-<td bgcolor="lightgray" align="center">
+<td align="center">
 <b><font color="white">7</font></b></td>
 <td rowspan="3" , bgcolor="#FFFFDF" align="center" onclick="event5onclick()">유전과 사회</td>
 <td rowspan="2" , bgcolor="#D8E8FF" align="center" onclick="event6onclick()">유클리드 기하학</td>
 <td rowspan="2" , bgcolor="#FFDDDD" align="center" onclick="event7onclick()">캠퍼스 멘토링</td>
 </tr>
 <tr>
-<td bgcolor="lightgray" align="center">
+<td align="center">
 <b><font color="white">8</font></b>
 </td>
 </tr>
 <tr>
-<td bgcolor="lightgray" align="center"><b><font color="white">9</font></b></td>
+<td align="center"><b><font color="white">9</font></b></td>
 <td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-      </section>
-  <aside class="col-3 col-m-12 banner">
-<ul>
- <p id="id_1">강의 평가</p>
- </ul></aside></div>
-<div class="row"></div>
-  <footer class="footer"><h4>&copy; 2018 Made by Choi Jeong Won / All rights reserved.</h4></footer>
+<br/>
+<br/>
+</section>
+<ul align="center">
+<h3>강의 평가</h3>
+ <p id="id_1"></p>
+ </ul>
+
+<footer align="center"> 
+    <p><br/>&copy; 2018 Made by Choi Jeong Won / All rights reserved.<br/><br></p> 
+</footer> 
 </body>
 </html>
