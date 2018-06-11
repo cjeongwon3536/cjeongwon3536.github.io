@@ -3,36 +3,41 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
- 
-  <title>포트폴리오</title>
-<style>
-body{background: lightgray;}
+  <style>
+table{width:100%;}
+  body{background: lightgray;}
 div{background: #EAEAEA;}
 th, td{background:#F6F6F6;}
 footer{background: #EAEAEA;}
 a:link{text-decoration:none;}
 a:visited{color:black; text-decoration:none;}
-a:hover{color:blue;}
-a:active{color:red;}
+a:hover{color:black;}
+a:active{color:black;}
+  *{box-sizing:border-box; padding:0; margin:0} .row::after{content:""; clear:both;
+display:table;}
+  .col-1{width:8.33%;} .col-2{width:16.66%;}.col-3{width:25%;} .col-4{width:33.33%;}
+  .col-5{width:41.66%;}.col-6{width:50%;}.col-7{width:58.33%;}.col-8{width:66.66%;}
+  .col-9{width:75%;}.col-10{width:83.33%;}.col-11{width:94.66%;}.col-12{width:100%;}
+  [class*="col-"]{float:left; padding:10px;} .header, .footer{background-color:
+lightgray; padding:10px;}
+  .menu ul, .banner ul{list-style-type:none;}
+  .menu li {background-color:pink; color:black; padding:10px; margin-bottom:10px;
+box-shadow:0 1px 3px gray;}
+  .menu li:hover{background-color:red;}
+  .banner li{border:2px solid black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
+  .banner li img{width:30%; vertical-align:middle;}
 </style>
+  <title>포트폴리오</title>
 </head>
 <body>
-<img src="https://cjeongwon3536.github.io/potefolio/banner.jpg"/>
-<div align="center"><a href="https://cjeongwon3536.github.io/potefolio/index.html"> 메인 </a>|
-<a href="https://cjeongwon3536.github.io/potefolio/timetable.html"> 수강과목 </a>|
-<a href="https://cjeongwon3536.github.io/potefolio/study.html"> 수업내용 </a>|
-<a href="https://cjeongwon3536.github.io/potefolio/plan.html"> 계획 </a>
-</div>
-<br/>
-
-  <section><p align="center">
-<img src="https://cjeongwon3536.github.io/potefolio/study.png"/> 
-  </p>
-<div>
-<br/>
-<p align="center">
-클릭 시 새 페이지로 이동
-</p>
+  <header class="header"><img src="https://cjeongwon3536.github.io/potefolio/banner.jpg" width="100%"/></header>
+  <div class="row"></div>
+  <div id="main">
+   <nav class="col-3 menu"> <!-- 메뉴 -->
+    <ul><li><a href="https://cjeongwon3536.github.io/potefolio/index.html">메인</a></li><li><a href="https://cjeongwon3536.github.io/potefolio/timetable.html">수강과목</a></li><li><a href="https://cjeongwon3536.github.io/potefolio/study.html">수업내용</a></li><li><a href="https://cjeongwon3536.github.io/potefolio/plan.html">계획</a></li></ul></nav>
+    <section class="col-6" align="center">
+    <caption><h2>수업내용</h2></caption>
+    <br/>
 <table align="center">
 <thead>
 <tr>
@@ -62,11 +67,13 @@ a:active{color:red;}
 </tr>
 </tbody>
 </table>
-<br/><br/>
-</div>
- </section> 
-<footer align="center"> 
-    <p><br/><br/><br/>&copy; 2018 Made by Choi Jeong Won / All rights reserved.<br/><br><br/><br/></p> 
-</footer> 
+</section>
+<aside class="col-3 col-m-12 banner">
+<ul>
+ <h3 align="center">강의 평가<br/><br/></h3>
+ <p align="center"><b>과목 이름</b><br/><br/>교수님 성함<br/><br/>내용<br/><br/></p>
+</ul></aside></div>
+<div class="row"></div>
+  <footer class="footer"><h4 align="center">&copy; 2018 Made by Choi Jeong Won / All rights reserved.</h4></footer>
 </body>
 </html>
