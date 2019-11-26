@@ -1,42 +1,59 @@
-<!DOCTYPE html> <!-- ~/beanReg.html -->
-<html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="viewport"content="width=device-width, initial-scale=1">
-<style> * {padding:0; margin:0;}
- body{font-family: verdana, sans-serif; font-size:0.8em;}
- header, nav, section, article, footer{border:1px solid gray; margin:5px; padding:8px;}
- nav ul{margin:0; padding:0;}
- nav ul li{display:inline; margin:5px;}
- a:link{ color:blue; text-decoration:none;}
- a:visited { color:purple; text-decoration:none;}
- a:hover {text-decoration:underline;}
- a:active {color:red; text-decoration:none;}
- section {height:450px;}
- .id_form{width:50px;}
- .label_form{display:inline-block; width:55px; height:14px; color:red; padding:5px;}
- .button_form{ width:60px; margin-left:5px;}
- .fset{padding: 15px;}
- #dupBtn{ height:25px; }
- ul.level_1 > li{list-style:none; display:inline-block; vertical-align:bottom;}
- ul.level_1 > li > ul {list-style:none;}
- .level_2 li {padding-top:5px;}
- .level_2 span { display:inline-block; width:70px;}
- .level_2 input { width: 100px; }
- #loginBtn button {margin-left:5px; height:42px;}
-</style><title>로그인 실습</title></head>
+
+<!doctype html>  <!-- phoneReg.html -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+    table{width:100%;}
+  body{background: lightgray;}
+div{background: #EAEAEA;}
+th, td{background:lightgray;}
+footer{background: #EAEAEA;}
+a:link{text-decoration:none;}
+a:visited{color:black; text-decoration:none;}
+a:hover{color:black;}
+a:active{color:black;}
+  *{box-sizing:border-box; padding:0; margin:0} .row::after{content:""; clear:both;
+display:table;}
+  .col-1{width:8.33%;} .col-2{width:16.66%;}.col-3{width:25%;} .col-4{width:33.33%;}
+  .col-5{width:41.66%;}.col-6{width:50%;}.col-7{width:58.33%;}.col-8{width:66.66%;}
+  .col-9{width:75%;}.col-10{width:83.33%;}.col-11{width:94.66%;}.col-12{width:100%;}
+  [class*="col-"]{float:left; padding:10px;} .header, .footer{background-color:
+lightgray; padding:10px;}
+  .menu ul, .banner ul{list-style-type:none;}
+  .menu li {background-color:pink; color:black; padding:10px; margin-bottom:10px;
+box-shadow:0 1px 3px gray;}
+  .menu li:hover{background-color:red;}
+  .banner li{border:2px solid black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
+  .banner li img{width:30%; vertical-align:middle;}
+  .fset{padding: 5px;}
+  .id_form{width:50px;}
+  .label_form{width:55px; height:14px; padding:5px;}
+  .button_form{ width:60px; margin-left:5px;}
+  </style>
+  <title>로그인 실습</title>
+</head>
 <body>
- <header><h2>실습을 환영합니다</h2></header>
- <nav><ul>
-   <li><a href="https://cjeongwon3536.github.io/test/1120/beanLogin.html">로그인</a></li>
-   <li><a href="https://cjeongwon3536.github.io/test/1120/beanReg.html">회원등록</a><li></ul></nav>
- <section>
-  <form action="./beanReg.jsp" method="post">
+  <header class="header"><img src="https://cjeongwon3536.github.io/test/1121/homework/banner.jpg" width="100%"/></header>
+  <div class="row"></div>
+  <div id="main">
+   <nav class="col-3 menu"> <!-- 메뉴 -->
+    <ul>
+      <li><a href="./phoneLogin.html">로그인</a></li>
+      <li><a href="./phoneReg.html">회원등록</a></li>
+    </ul></nav>
+    <section class="col-6">
+     <fieldset class="fset"><legend>검색결과</legend>
+ <div style"overflow-x:auto; overflow-y:auto;">
+  <fieldset class="fset"><legend>로그인</legend>
+ <form action="./beanReg.jsp" method="post">
    <fieldset class = "fset"> <legend>회원등록</legend>
-   <fieldset class = "fset"> <legend>이름/이메일</legend>
+   <fieldset class = "fset"> <legend>회원정보</legend>
    <label class="label_form" for="stud_name"> 이름</label>
    <input type="text" name="stud_name" size="18" maxlength="50" required/><br/>
-   <label id="label_form2" class="label_form" for="stud_email"> 이메일</label>
-   <input type="text" name="stud_email" size="18" maxlength="50" /><br/>
+   <label id="label_form2" class="label_form" for="stud_email"> 주소</label>
+   <input type="text" name="stud_address" size="18" maxlength="50" /><br/>
    <label id="label_form3" class="label_form" for="stud_phone"> 전화번호</label>
    <input type="text" name="stud_phone" size="18" maxlength="50" /><br/></fieldset>
    <fieldset class = "fset"> <legend>아이디/비밀번호</legend>
@@ -46,20 +63,37 @@
    <label class="label_form" for="stud_passwd">비밀번호</label>
    <input type="password" name="stud_passwd" size="18" maxlength="50" required/>
    </fieldset>
-   <fieldset class = "fset"> <legend>성별</legend>
-   <label for="stud_gender">여자</label>
-   <input class="id_form" type="radio" name="stud_gender" value="여자" checked/>
-   <label for="stud_gender">남자</label>
-   <input class="id_form" type="radio" name="stud_gender" value="남자"></fieldset>
-   <fieldset class = "fset"> <legend>취미</legend>
-   <label for="stud_hobby1">낚시</label>
-   <input class="id_form" type="checkbox" name="stud_hobby" value="낚시"/>
-   <label for="stud_hobby1">바둑</label>
-   <input class="id_form" type="checkbox" name="stud_hobby" value="바둑"/>
-   <label for="stud_hobby1">독서</label>
-   <input class="id_form" type="checkbox" name="stud_hobby" value="독서"/>
+   <fieldset class = "fset"> <legend>브랜드</legend>
+   <label class="label_form" for="stud_brand">삼성</label>
+   <input class="id_form" type="radio" name="stud_brand" value="삼성" checked/>
+   <label class="label_form" for="stud_brand">애플</label>
+   <input class="id_form" type="radio" name="stud_brand" value="애플">
+   <label class="label_form" for="stud_brand">샤오미</label>
+   <input class="id_form" type="radio" name="stud_brand" value="샤오미"></fieldset>
+   <fieldset class = "fset"> <legend>기종</legend>
+   <label class="label_form" for="stud_pname">Galaxy S10</label>
+   <input class="id_form" type="radio" name="stud_pname" value="Galaxy S10" checked/>
+   <label class="label_form" for="stud_pname">Galaxy Note10</label>
+   <input class="id_form" type="radio" name="stud_pname" value="Galaxy Note10">
+   <label class="label_form" for="stud_pname">IPhone 11 Pro</label>
+   <input class="id_form" type="radio" name="stud_pname" value="IPhone 11 Pro">
+   <label for="stud_pname">IPhone 11</label>
+   <input class="id_form" type="radio" name="stud_pname" value="IPhone 11"></fieldset>
+   <fieldset class = "fset"> <legend>용량</legend>
+   <label class="label_form" for="stud_capacity1">64gb</label>
+   <input class="id_form" type="radio" name="stud_hobby" value="64gb" checked/>
+   <label class="label_form" for="stud_capacity1">128gb</label>
+   <input class="id_form" type="radio" name="stud_hobby" value="128gb"/>
+   <label class="label_form" for="stud_capacity1">256gb</label>
+   <input class="id_form" type="radio" name="stud_hobby" value="256gb"/>
+   <label for="stud_capacity1">512gb</label>
+   <input class="id_form" type="radio" name="stud_hobby" value="512gb"/>
    </fieldset><br/>
    <input class="button_form" type="submit" value="회원등록">
    <input class="button_form" type="reset" value="취소">
-   </fieldset></form></section>
-  <footer><p>&copy;2019 Made by Korea. All right reserved.</p></footer></body></html>
+   </fieldset></form></fieldset>
+</section>
+  </div><div class="row"></div>
+  <footer class="footer"><h4 align="center">&copy; 2019 Made by Choi Jeong Won / All rights reserved.</h4></footer>
+</body>
+</html>
