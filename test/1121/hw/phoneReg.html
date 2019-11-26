@@ -1,3 +1,4 @@
+
 <!doctype html>  <!-- phoneReg.html -->
 <html lang="ko">
 <head>
@@ -27,6 +28,9 @@ box-shadow:0 1px 3px gray;}
   .banner li{border:2px solid black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
   .banner li img{width:30%; vertical-align:middle;}
   .fset{padding: 5px;}
+  .id_form{width:50px;}
+  .label_form{width:55px; height:14px; padding:5px;}
+  .button_form{ width:60px; margin-left:5px;}
   </style>
   <title>로그인 실습</title>
 </head>
@@ -46,41 +50,41 @@ box-shadow:0 1px 3px gray;}
  <form action="./beanReg.jsp" method="post">
    <fieldset class = "fset"> <legend>회원등록</legend>
    <fieldset class = "fset"> <legend>회원정보</legend>
-   <label class="label_form" for="stud_name"> 이름</label>
+   <label class="label_form" for="stud_name">이름　　</label>
    <input type="text" name="stud_name" size="18" maxlength="50" required/><br/>
-   <label id="label_form2" class="label_form" for="stud_email"> 주소</label>
+   <label id="label_form2" class="label_form" for="stud_email">주소　　</label>
    <input type="text" name="stud_address" size="18" maxlength="50" /><br/>
    <label id="label_form3" class="label_form" for="stud_phone"> 전화번호</label>
    <input type="text" name="stud_phone" size="18" maxlength="50" /><br/></fieldset>
    <fieldset class = "fset"> <legend>아이디/비밀번호</legend>
-   <label class="label_form" for="stud_id">아이디</label>
+   <label class="label_form" for="stud_id">아이디　</label>
    <input type="text" name="stud_id" size="18" maxlength="50" required/>
 	<button id="dupBtn">중복확인</button><br/>
    <label class="label_form" for="stud_passwd">비밀번호</label>
    <input type="password" name="stud_passwd" size="18" maxlength="50" required/>
    </fieldset>
    <fieldset class = "fset"> <legend>브랜드</legend>
-   <label for="stud_brand">삼성</label>
+   <label class="label_form" for="stud_brand">삼성</label>
    <input class="id_form" type="radio" name="stud_brand" value="삼성" checked/>
-   <label for="stud_brand">애플</label>
+   <label class="label_form" for="stud_brand">애플</label>
    <input class="id_form" type="radio" name="stud_brand" value="애플">
-   <label for="stud_brand">샤오미</label>
+   <label class="label_form" for="stud_brand">샤오미</label>
    <input class="id_form" type="radio" name="stud_brand" value="샤오미"></fieldset>
    <fieldset class = "fset"> <legend>기종</legend>
-   <label for="stud_pname">Galaxy S10</label>
+   <label class="label_form" for="stud_pname">Galaxy S10</label>
    <input class="id_form" type="radio" name="stud_pname" value="Galaxy S10" checked/>
-   <label for="stud_pname">Galaxy Note10</label>
+   <label class="label_form" for="stud_pname">Galaxy Note10</label>
    <input class="id_form" type="radio" name="stud_pname" value="Galaxy Note10">
-   <label for="stud_pname">IPhone 11 Pro</label>
+   <label class="label_form" for="stud_pname">IPhone 11 Pro</label>
    <input class="id_form" type="radio" name="stud_pname" value="IPhone 11 Pro">
    <label for="stud_pname">IPhone 11</label>
    <input class="id_form" type="radio" name="stud_pname" value="IPhone 11"></fieldset>
    <fieldset class = "fset"> <legend>용량</legend>
-   <label for="stud_capacity1">64gb</label>
+   <label class="label_form" for="stud_capacity1">64gb</label>
    <input class="id_form" type="radio" name="stud_hobby" value="64gb" checked/>
-   <label for="stud_capacity1">128gb</label>
+   <label class="label_form" for="stud_capacity1">128gb</label>
    <input class="id_form" type="radio" name="stud_hobby" value="128gb"/>
-   <label for="stud_capacity1">256gb</label>
+   <label class="label_form" for="stud_capacity1">256gb</label>
    <input class="id_form" type="radio" name="stud_hobby" value="256gb"/>
    <label for="stud_capacity1">512gb</label>
    <input class="id_form" type="radio" name="stud_hobby" value="512gb"/>
