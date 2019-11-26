@@ -1,0 +1,44 @@
+<!doctype html>  <!-- phoneReg.html -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="http://cjeongwon3536.github.io/css/portfolio.css">
+  <style>
+ ul.level_1 > li {list-style:none; display:inline-block; vertical-align:bottom;}
+ ul.level_2 > li {list-style:none;}
+ .id_form{width:30px;}
+ .level_2 li{padding-top:5px; padding-left:10px;}
+ .level_2 span{display:inline-block; width:80px;}
+ .level_2 input{width:100px;}
+ .fset{padding: 5px;}
+ </style>
+  <title>포트폴리오</title>
+</head>
+<body>
+  <header class="header"><img src="https://cjeongwon3536.github.io/test/1121/homework/banner.jpg" width="100%"/></header>
+  <div class="row"></div>
+  <div id="main">
+   <nav class="col-3 menu"> <!-- 메뉴 -->
+    <ul>
+      <li><a href="./phoneLogout.html">로그아웃</a></li>
+      <li><a href="./phoneReg.html">회원등록</a></li>
+    </ul></nav>
+    <section class="col-6">
+ <form action="http://203.237.142.245/~s20141524/week12/beanResult.jsp" method="post">
+      <fieldset class="fset"><legend>검색</legend>
+       <select name="search_select">
+        <option value="stud_all" selected>전체</option>
+        <option value="stud_name">이름</option">
+        <option value="hobby">취미</option>
+       </select>
+      <input id="find_form" type="text" name="stud_search" size="20" maxlength="50"/>
+      <input type="submit" value="검색">
+      <button><a href="https://cjeongwon3536.github.io/test/1121/beanResult.html">결과예시</a></button>
+      </fieldset>
+     </form>
+</section>
+  </div><div class="row"></div>
+  <footer class="footer"><h4 align="center">&copy; 2019 Made by Choi Jeong Won / All rights reserved.</h4></footer>
+</body>
+</html>
