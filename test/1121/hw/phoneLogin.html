@@ -1,0 +1,41 @@
+<!doctype html>  <!-- phoneLogin.html -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="http://cjeongwon3536.github.io/css/portfolio.css">
+  <style>
+ul.level_1 > li {list-style:none; display:inline-block; vertical-align:bottom;}
+ul.level_2 > li {list-style:none;}
+.level_2 li{padding-top:5px; padding-left:10px;}
+.level_2 span{display:inline-block; width:80px;}
+.level_2 input{width:100px;}
+ </style>
+  <title>포트폴리오</title>
+</head>
+<body>
+  <header class="header"><img src="https://cjeongwon3536.github.io/test/1121/homework/banner.jpg" width="100%"/></header>
+  <div class="row"></div>
+  <div id="main">
+   <nav class="col-3 menu"> <!-- 메뉴 -->
+    <ul>
+      <li><a href="./phoneLogin.html">로그인</a></li>
+      <li><a href="./phoneReg.html">회원등록</a></li>
+    </ul></nav>
+    <section class="col-6">
+ <fieldset class="fset"><legend>로그인</legend>
+ <form action="./beanLogin.jsp" method="post">
+ <ul class="level_1">
+ <li>
+  <ul class="level_2">
+   <li><p></p></li>
+   <li><span>아이디</span><input type="text" name="user_id"></li>
+   <li><span>비밀번호</span><input type="password" name="user_passwd"></li></ul></li>
+   <li id="loginBtn"><button>로그인</button></li>
+   <p>　</p>
+  </ul></form></fieldset>
+</section>
+  </div><div class="row"></div>
+  <footer class="footer"><h4 align="center">&copy; 2019 Made by Choi Jeong Won / All rights reserved.</h4></footer>
+</body>
+</html>
