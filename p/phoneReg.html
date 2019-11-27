@@ -1,0 +1,83 @@
+<!doctype html> <!--   phoneReg.html  -->
+  <html lang="ko">
+  <head>
+   <meta charset="utf-8"/>
+   <meta name="viewport"content="width=device-width,initial-scale=1"/>
+ <style> * {padding:0; margin:0;}
+body{background:#e9fce6; font-family: Verdana, sans-serif; font-size:0.8em}
+header,nav,section,article,aside,footer{border:1px solid gray; margin:5px; padding:8px}
+nav ul{margin:0; padding:0;}
+nav ul li{display:inline; margin:5px}
+a:link{color:blue; text-decoration:none;}
+a:visited{color:purple; text-decoration:none;}
+a:hover{text-decoration:underline;}
+a:active{color:red; text-decoration:none;}
+section{height:500px;}
+.id_form{width:70px;}
+.label_form{display:inline-block; width:55px; height:14px; color:red; padding:5px;}
+.button_form{width:60px; margin-left:5px;}
+.fset{padding:15px;}
+#dupBtn{height:25px;}
+ul.level_1 > li {list-style:none; display:inline-block; vertical-align:bottom;}
+ul.level_2 > li {list-style:none;}
+.level_2 li{padding-top:5px;}
+.level_2 span{display:inline-block; width:70px;}
+.level_2 input{width:100px;}
+#loginBtn button{margin-left:5px; height:42px;}
+h2{text-align:center;}
+</style><title>로그인 실습</title></head>
+<body>
+ <header>
+  <img src="https://cjeongwon3536.github.io/test/1121/homework/banner.jpg" width="100%"/>
+  <h2>실습을 환영합니다</h2>
+ </header>
+ <nav><ul>
+   <li><a href="./phoneLogin.html">로그인</a></li>
+   <li><a href="./phoneReg.html">회원등록</a></li></ul></nav>
+ <section>
+  <form action="./beanReg.jsp" method="post">
+   <fieldset class = "fset"> <legend>회원등록</legend>
+   <fieldset class = "fset"> <legend>회원정보</legend>
+   <label class="label_form" for="stud_name">이름　　</label>
+   <input type="text" name="stud_name" size="18" maxlength="50" required/><br/>
+   <label id="label_form2" class="label_form" for="stud_email">주소　　</label>
+   <input type="text" name="stud_address" size="18" maxlength="50" /><br/>
+   <label id="label_form3" class="label_form" for="stud_phone"> 전화번호</label>
+   <input type="text" name="stud_phone" size="18" maxlength="50" /><br/></fieldset>
+   <fieldset class = "fset"> <legend>아이디/비밀번호</legend>
+   <label class="label_form" for="stud_id">아이디　</label>
+   <input type="text" name="stud_id" size="18" maxlength="50" required/>
+	<button id="dupBtn">중복확인</button><br/>
+   <label class="label_form" for="stud_passwd">비밀번호</label>
+   <input type="password" name="stud_passwd" size="18" maxlength="50" required/>
+   </fieldset>
+   <fieldset class = "fset"> <legend>브랜드</legend>
+   <label for="stud_brand">삼성</label>
+   <input class="id_form" type="radio" name="stud_brand" value="삼성" checked/>
+   <label for="stud_brand">애플</label>
+   <input class="id_form" type="radio" name="stud_brand" value="애플">
+   <label for="stud_brand">샤오미</label>
+   <input class="id_form" type="radio" name="stud_brand" value="샤오미"></fieldset>
+   <fieldset class = "fset"> <legend>기종</legend>
+   <label for="stud_pname">Galaxy S10</label>
+   <input class="id_form" type="radio" name="stud_pname" value="Galaxy S10" checked/>
+   <label for="stud_pname">Galaxy Note10</label>
+   <input class="id_form" type="radio" name="stud_pname" value="Galaxy Note10">
+   <label for="stud_pname">IPhone 11 Pro</label>
+   <input class="id_form" type="radio" name="stud_pname" value="IPhone 11 Pro">
+   <label for="stud_pname">IPhone 11</label>
+   <input class="id_form" type="radio" name="stud_pname" value="IPhone 11"></fieldset>
+   <fieldset class = "fset"> <legend>용량</legend>
+   <label for="stud_capacity1">64gb</label>
+   <input class="id_form" type="radio" name="stud_hobby" value="64gb" checked/>
+   <label for="stud_capacity1">128gb</label>
+   <input class="id_form" type="radio" name="stud_hobby" value="128gb"/>
+   <label for="stud_capacity1">256gb</label>
+   <input class="id_form" type="radio" name="stud_hobby" value="256gb"/>
+   <label for="stud_capacity1">512gb</label>
+   <input class="id_form" type="radio" name="stud_hobby" value="512gb"/>
+   </fieldset><br/>
+   <input class="button_form" type="submit" value="회원등록">
+   <input class="button_form" type="reset" value="취소">
+   </fieldset></form></section>
+  <footer><p>&copy;2019 Made by Korea. All right reserved.</p></footer></body></html>
